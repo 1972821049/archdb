@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArchDB - 寤虹瓚鏁版嵁搴?/title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f5f5; color: #333; min-height: 100vh; display: flex; flex-direction: column; }
+    nav { background: #1a1a2e; color: #fff; padding: 0 24px; display: flex; align-items: center; height: 56px; position: sticky; top: 0; z-index: 100; }
+    nav .logo { font-size: 20px; font-weight: bold; margin-right: 40px; }
+    nav .logo a { color: #e94560; text-decoration: none; }
+    nav .nav-links { display: flex; gap: 24px; }
+    nav .nav-links a { color: #ccc; text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    nav .nav-links a:hover { color: #fff; }
+    nav .nav-links a.ask-marvis { color: #e94560; font-weight: 600; }
+    .spacer { flex: 1; }
+    .hero { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; padding: 80px 24px; text-align: center; }
+    .hero h1 { font-size: 48px; margin-bottom: 16px; }
+    .hero p { font-size: 18px; color: #aaa; max-width: 600px; margin: 0 auto; }
+    .content { max-width: 1200px; margin: 0 auto; padding: 48px 24px; flex: 1; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+    .card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .card h3 { margin-bottom: 8px; color: #1a1a2e; }
+    .card p { color: #666; font-size: 14px; line-height: 1.6; }
+    footer { background: #1a1a2e; color: #888; padding: 32px 24px; text-align: center; font-size: 13px; }
+    footer a { color: #e94560; text-decoration: none; margin: 0 12px; }
+    footer a:hover { text-decoration: underline; }
+    .marvis-fab { position: fixed; bottom: 32px; right: 32px; z-index: 1000; }
+    .marvis-btn { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, #e94560, #c23152); color: #fff; text-decoration: none; box-shadow: 0 4px 16px rgba(233,69,96,0.4); transition: transform 0.2s, box-shadow 0.2s; font-size: 24px; cursor: pointer; }
+    .marvis-btn:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(233,69,96,0.6); }
+    .marvis-tooltip { position: absolute; right: 64px; top: 50%; transform: translateY(-50%); background: #333; color: #fff; padding: 6px 12px; border-radius: 6px; font-size: 12px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
+    .marvis-fab:hover .marvis-tooltip { opacity: 1; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><a href="/archdb/">ArchDB</a></div>
+    <div class="nav-links">
+      <a href="#buildings">寤虹瓚</a>
+      <a href="#architects">寤虹瓚甯?/a>
+      <a href="#styles">椋庢牸</a>
+      <a href="#materials">鏉愭枡</a>
+      <a href="https://marvis.qq.com" target="_blank" rel="noopener" class="ask-marvis">Ask Marvis</a>
+    </div>
+  </nav>
 
+  <section class="hero">
+    <h1>ArchDB</h1>
+    <p>鎺㈢储涓栫晫寤虹瓚涔嬬編 鈥?浠庡彜鍏稿埌鐜颁唬锛屼粠涓滄柟鍒拌タ鏂癸紝涓€绔欏紡寤虹瓚璧勬枡搴撱€?/p>
+  </section>
+
+  <main class="content">
+    <div class="card-grid">
+      <div class="card">
+        <h3>鏁呭</h3>
+        <p>涓浗鏄庢竻涓や唬鐨勭殗瀹跺娈匡紝浣嶄簬鍖椾含涓酱绾跨殑涓績锛屾槸涓浗鍙や唬瀹环寤虹瓚涔嬬簿鍗庛€?/p>
+      </div>
+      <div class="card">
+        <h3>鎮夊凹姝屽墽闄?/h3>
+        <p>20涓栫邯鏈€鍏风壒鑹茬殑寤虹瓚涔嬩竴锛岀嫭鐗圭殑璐濆３褰㈠眿椤跺凡鎴愪负鎮夊凹鐨勬爣蹇楁€у湴鏍囥€?/p>
+      </div>
+      <div class="card">
+        <h3>鍦ｅ鏃忓ぇ鏁欏爞</h3>
+        <p>瀹変笢灏悸烽珮杩殑鏉颁綔锛屽反濉炵綏閭ｇ殑鏍囧織鎬у缓绛戯紝铻嶅悎鍝ョ壒涓庢柊鑹烘湳杩愬姩椋庢牸銆?/p>
+      </div>
+      <div class="card">
+        <h3>涓滀含鏅寸┖濉?/h3>
+        <p>涓栫晫鏈€楂樼殑鑷珛寮忕數娉㈠锛岀幇浠ｅ伐绋嬩笌鏃ユ湰浼犵粺缇庡鐨勫畬缇庣粨鍚堛€?/p>
+      </div>
+      <div class="card">
+        <h3>鍗㈡诞瀹噾瀛楀</h3>
+        <p>璐濊伩閾璁＄殑鐜荤拑閲戝瓧濉斿叆鍙ｏ紝灏嗙幇浠ｅ缓绛戝厓绱犲畬缇庤瀺鍏ュ彜鍏稿崲娴寤虹瓚缇ゃ€?/p>
+      </div>
+      <div class="card">
+        <h3>娴佹按鍒</h3>
+        <p>寮楀叞鍏嬄峰姵鍩冨痉路璧栫壒鐨勪唬琛ㄤ綔锛屽缓绛戜笌鑷劧铻嶄负涓€浣撶殑鏈夋満寤虹瓚鍏歌寖銆?/p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://marvis.qq.com" target="_blank" rel="noopener">Ask Marvis</a> |
+      <a href="#about">鍏充簬 ArchDB</a> |
+      <a href="#contribute">璐＄尞</a> |
+      <a href="#contact">鑱旂郴</a>
+    </p>
+    <p style="margin-top: 8px;">&copy; 2026 ArchDB. Built with passion for architecture.</p>
+  </footer>
+
+  <div class="marvis-fab">
+    <a href="https://marvis.qq.com" target="_blank" rel="noopener" class="marvis-btn" aria-label="鍚?Marvis 鎻愰棶寤虹瓚鐩稿叧闂">
+      <span>?</span>
+    </a>
+  </div>
+</body>
+</html>
